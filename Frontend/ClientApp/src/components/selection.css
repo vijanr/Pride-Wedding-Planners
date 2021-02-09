@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+    
+    .top-left { 
+      
+      border: none;
+      color: white;
+      padding: 100px 100px;
+      text-align: center;
+      
+      display: inline-block;
+      
+      width: 800px;
+      height: 500px;
+      top: 0; 
+      left: 21%; 
+  
+  
+      font-family:  cursive;
+      font-size: 25px;
+      text-shadow: 3px 3px 1px orange;
+      color: black;
+      letter-spacing: 3px;
+      word-spacing: 8px;
+    
+      font-variant: small-caps;
+      align-items: top;
+      text-align: top;
+    } 
+    .new2{
+      text-decoration-color: red;
+      font-size: 25px;
+      text-shadow: 3px 3px 1px orange;
+      color: black;
+      letter-spacing: 3px;
+      word-spacing: 8px;
+      font-weight: bold;
+  
+  
+    }
+  
+    .new3{
+      text-decoration-color: red;
+      font-size: 18px;
+      text-shadow: 3px 3px 1px orange;
+      color: black;
+      text-align: center;
+    } 
+    
+    .top-center { 
+      align-items: top;
+      transform: translateX(-50%); 
+    } 
+    
+    .top-right { 
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 100px 100px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      width: 100px;
+      height: 100px;
+      top: 0; 
+      right: 0; 
+    } 
+    
+    .mid-left { 
+      background-image: url("./images/hotel.gif");
+      border: none;
+      color: white;
+      padding: 100px 200px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      top: 50%; 
+      left: 0; 
+      transform: translateY(-50%); 
+    } 
+    
+    .mid-center { 
+  
+      background-image: url("./images/saloon1.gif");
+      border: none;
+      color: white;
+      padding: 100px 200px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      top: 50%; 
+      left: 50%; 
+      transform: translateX(-50%) translateY(-50%); 
+    } 
+    
+    .mid-right { 
+      background-image: url("./images/photograpghy.gif");
+      border: black;
+      color: white;
+      padding: 100px 200px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      top: 50%; 
+      right: 0; 
+      transform: translateY(-50%); 
+    } 
+    
+    .bottom-left { 
+      background-image: url("./images/jew.gif");
+      border: none;
+    
+      padding: 92px 200px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      bottom: 0; 
+      left: 0; 
+    } 
+    
+    .bottom-center { 
+      background-image: url("./images/dec.gif");
+      border: none;
+      padding: 92px 200px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      bottom: 0; 
+      left: 50%; 
+      transform: translateX(-50%); 
+    } 
+    
+    .bottom-right { 
+      background-image: url("./images/dj.gif");
+      border: none;
+      text-shadow: 3px 3px 1px orange;
+      padding: 92px 124px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      bottom: 0; 
+      right: 0; 
+    } 

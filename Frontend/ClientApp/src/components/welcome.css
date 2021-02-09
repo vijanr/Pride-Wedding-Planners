@@ -1,0 +1,148 @@
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-image: url("./images/source.gif");
+
+  
+}
+.testClass5{
+  
+  font-family: "Brush Script MT", cursive;
+  font-size: 20px;
+  text-shadow: 3px 3px 1px orange;
+  color: black;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+
+  font-variant: small-caps;
+ 
+  text-align: center;
+  
+
+
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.testClass{
+  text-shadow: 3px 3px 1px orange;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: bold;
+  text-align: center;
+  font-weight: bold;
+
+
+}
+
+.testClass4{
+  width: 200px;
+  height: 100px;
+  margin : auto ;
+  position: center ;
+  display: flex ;
+  color:white;
+  text-shadow: 3px 3px 1px orange;
+  border: 3px solid rgb(192, 14, 118);
+  border-style: groove;
+  border-width: 1px;
+  border-radius: 15px;
+  background-image: url("./images/move.gif");
+  font-size: 20px;
+  font-style: bold;
+  justify-content: middle;
+  vertical-align: middle; 
+  align-items: middle;
+  padding: 25px 25px;
+  text-align: center ;
+
+}  
+
+.magenta {
+  background-color: magenta;
+}
+
+.testClass2{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: 3px solid rgb(131, 19, 38);
+    border-radius: 5px;
+    border-style: groove;
+    border-color: coral;
+    border-width: 7px;
+    background-image: url("./images/couple3.PNG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+  color: purple;
+ 
+}
+
+.button.margin-right {
+  margin-right: 20px;
+  color: red;
+}
+ 
+.newclass{
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 3px solid rgb(131, 19, 38);
+  border-radius: 5px;
+  border-style: groove;
+  border-color: coral;
+  border-width: 7px;
+  background-image: url("./images/path.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.testClass8{
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  border: 3px solid rgb(131, 19, 38);
+  border-radius: 5px;
+  border-style: groove;
+  border-color: coral;
+  border-width: 7px;
+  background-image: url("./images/gi.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  
+}
+
+.green {
+  background-color: green;
+}
+ 
+ 
