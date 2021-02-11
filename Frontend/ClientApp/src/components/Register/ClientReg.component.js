@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import  {ClientRegistration}  from '../../authorization/authorization';
 
@@ -32,15 +32,15 @@ const ClientRegister = () => {
 
   return (
     <Fragment>
-      <h1 className="large ">Client Registration</h1>
-      <p className="lead">
-        <i className="text-middle" /> Create Your Account
-      </p>
-      <form className="form" onSubmit={e => onSubmit(e)}>
-
-      <div className="form-group">
-          <small className="form-text">Client NIC Number</small>
-          <input
+      <form  onSubmit={e => onSubmit(e)}>
+        
+      <h3  className="testClass" >CLIENT REGISTRATION </h3>
+         <h3 className="form_text">Create a new account</h3>
+           
+ 
+        <div className="form-group">
+          <small className="form_text">Client NIC Number</small>
+          <input className="font_size"
             type="text"
             placeholder="ClientNIC"
             name="ClientNIC"
@@ -50,8 +50,8 @@ const ClientRegister = () => {
         </div>
 
         <div className="form-group">
-          <small className="form-text">First Name</small>
-          <input
+          <small className="form_text">First Name</small>
+          <input className="font_size"
             type="text"
             placeholder="First Name"
             name="FirstName"
@@ -60,69 +60,69 @@ const ClientRegister = () => {
           />
         </div>
         <div className="form-group">
-          <small className="form-text"> Last Name</small>
-          <input
+          <small className="form_text"> Last Name</small>
+          <input className="font_size"
             type="text"
             placeholder="Last Name"
             name="LastName"
             value={LastName}
             onChange={e => onChange(e)}
           />
-          <small className="form-text"></small>
+          <small className="font_size"></small>
         </div>
         <div className="form-group">
-          <small className="form-text"> Address</small>
-          <input
+          <small className="form_text"> Address</small>
+          <input className="font_size"
             type="text"
             placeholder="Address"
             name="Address"
             value={Address}
             onChange={e => onChange(e)}
           />
-          <small className="form-text"></small>
+          <small className="font_size"></small>
         </div>
 
         <div className="form-group">
-          <small className="form-text"> UserName</small>
-          <input
+          <small className="form_text"> UserName</small>
+          <input className="font_size"
             type="text"
             placeholder="UserName"
             name="UserName"
             value={UserName}
             onChange={e => onChange(e)}
           />
-          <small className="form-text"></small>
+          <small className="font_size"></small>
         </div>
 
         <div className="form-group">
-          <small className="form-text"> Email</small>
-          <input
+          <small className="form_text"> Email</small>
+          <input className="font_size"
             type="text"
             placeholder="Email"
             name="Email"
             value={Email}
             onChange={e => onChange(e)}
           />
-          <small className="form-text"></small>
+          <small className="font_size"></small>
         </div>
 
         <div className="form-group">
-          <small className="form-text">Mobile Number</small>
-          <input
+          <small className="form_text">Mobile Number</small>
+          <input className="font_size"
             type="text"
             placeholder="MobileNo"
             name="MobileNo"
             value={MobileNo}
             onChange={e => onChange(e)}
           />
-          <small className="form-text"></small>
+          <small className="font_size"></small>
         </div>
 
 
 
         <div className="form-group">
-          <small className="form-text">Password</small>
-          <input
+          <small className="form_text">Password</small>
+          <input className="font_size"
             type="password"
             placeholder="Password"
             name="Password"
@@ -131,10 +131,10 @@ const ClientRegister = () => {
           />
         </div>
         <div className="form-group">
-          <small className="form-text">Confirm Password</small>
-          <input
+          <small className="form_text">Confirm Password</small>
+          <input className="font_size"
             type="password"
-            placeholder="Comfirm Your Password"
+            placeholder="Confirm Your Password"
             name="ConfirmPassword"
             value={ConfirmPassword}
             onChange={e => onChange(e)}
@@ -144,6 +144,16 @@ const ClientRegister = () => {
       <input type="submit" className="btn btn-primary" value="ClientRegistration" />
 
         <input type="submit" className="btn btn-primary" value="Register As Client" />
+
+      <Link to="/verify-login">
+           < button type="submit" className="btn btn-dark btn-lg btn-block">Next</button>
+      </Link>
+      <Link to="/sign-in">
+         <p className="forgot-password text-right">Already registered <a href="#">log in?</a></p>
+      </Link>
+
+
+
      </form>
       
     </Fragment>

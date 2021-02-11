@@ -35,7 +35,7 @@ const VendorRegister = () => {
      
       <form  onSubmit={e => onSubmit(e)}>
         
-        <h3  className="testClass" >Vendor REGISTRATION </h3>
+        <h3  className="testClass" >VENDOR REGISTRATION </h3>
          <h3 className="form_text">Create a new account</h3>
            
  
@@ -120,7 +120,13 @@ const VendorRegister = () => {
         
         
          <input className="font_size" type="submit" className="btn btn-primary" value="Register as a Vendor" />
-        
+
+         <Link to="/verify-login-2">
+           < button type="submit" className="btn btn-dark btn-lg btn-block">Next</button>
+         </Link>
+         <Link to="/sign-in">
+           <p className="forgot-password text-right">Already registered <a href="#">log in?</a></p>
+         </Link>        
      </form>
       
     </Fragment>

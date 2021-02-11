@@ -47,7 +47,7 @@ export const ClientRegistration = async (ClientNIC, FirstName, LastName, Address
             await axois.post("https://localhost:5001/api/ClientRegistrations", body, config);
             alert("Your Have Successfully Registered ");
             console.log("Client Registration is Successful")
-    
+           
         } catch (error) {
             alert("Please Check Your Information again ");
             console.log("Client Registration is Unsuccessful");
@@ -79,6 +79,7 @@ export const VendorRegistration = async (CompanyName, CompanyCategory, Telephone
         try {
             await axois.post("https://localhost:5001/api/VendorRegistrations", body, config);
             alert("Your Have Successfully Registered ");
+            
             console.log("Vendor Registration is Successful")
     
         } catch (error) {

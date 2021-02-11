@@ -76,3 +76,23 @@ body, html, .App, #root, .outer {
   font-size: 14px;
   text-align: center;
 }
+
+.container {
+  width: 100%;
+  height: 110%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+header {
+  flex-shrink: 0;
+}
+.body{
+  flex-grow: 1;
+  overflow: auto;
+  min-height: 2em;
+}
+footer{
+  flex-shrink: 0;
+}
