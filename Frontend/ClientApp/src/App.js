@@ -24,6 +24,8 @@ import Signin from "./components/signin.component";
 import Contactinfo from "./components/contactinfo.component";
 import MerchentSignup from "./components/merchentregister.component";
 import MerchentAdd from "./components/merchentadd.component";
+import ClientRegister from "./components/Register/ClientReg.component";
+import VendorRegister from "./components/Register/VendorReg.component";
 import './custom.css'
 //import react from 'react';
 
@@ -56,6 +58,15 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to={"/sign-in"}>Sign In</Link>
               </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to={"/Client-Registration"}>Client Registration</Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to={"/Vendor-Registration"}>Vendor Registration</Link>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -76,6 +87,8 @@ function App() {
             <Route path="/client-selection" component={Client_Selection} />
             <Route path="/sign-in" component={Signin}/>
             <Route path="/contact-info" component={Contactinfo}/>
+            <Route path="/Client-Registration" component={ ClientRegister}/>
+            <Route path="/Vendor-Registration" component={ VendorRegister}/>
           </Switch>
         </div>
       </div>
