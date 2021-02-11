@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 
+
+
+
 export default class SignUp extends Component {
     render() {
         return (
@@ -10,6 +13,8 @@ export default class SignUp extends Component {
                 <div className="form-group">
                     <label classname="font_size">NIC number</label>
                     <input type="text" className="font_size" placeholder="NIC Number" />
+                
+
                 </div>
 
                 <div className="form-group">

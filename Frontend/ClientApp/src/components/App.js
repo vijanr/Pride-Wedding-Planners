@@ -24,6 +24,7 @@ import Signin from "./components/signin.component";
 import Contactinfo from "./components/contactinfo.component";
 import MerchentSignup from "./components/merchentregister.component";
 import MerchentAdd from "./components/merchentadd.component";
+import Register from "./components/Register";
 import Upload from "./components/upload.component";
 
 //import './custom.css'
@@ -59,6 +60,9 @@ function App() {
                 <Link className="nav-link" to={"/sign-in"}>Sign In</Link>
               </li>
 
+              <li className="nav-item">
+                <Link className="nav-link" to={"/Client-Registration"}>Client Registration</Link>
+              </li>
 
             </ul>
           </div>
@@ -81,7 +85,7 @@ function App() {
             <Route path="/sign-in" component={Signin}/>
             <Route path="/contact-info" component={Contactinfo}/>
             <Route path="/upload" component={Upload}/>
-            
+            <Route path="/Client-Registration" component={ Register}/>
           
           </Switch>
         </div>

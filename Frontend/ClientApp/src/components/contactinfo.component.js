@@ -2,6 +2,7 @@ import React, { Component } from "react";
 //import { Link } from 'react-router-dom';
 
 //import "./index.css";
+
 import "./contactinfo.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -40,13 +40,13 @@ export default class Employee extends Component {
                
               </div> 
               <div class="position-absolute bottom-center"> 
-                
+                 <Link to="/upload">
                  <button type="button" class="new3" >DECORATIONS</button> 
+                 </Link>
                
               </div> 
               <div class="position-absolute bottom-right"> 
-                
-                 <button type="button" class="new3">ENTERTAINMENT</button> 
+                <button type="button" class="new3">ENTERTAINMENT</button> 
                
               </div> 
             </div> 

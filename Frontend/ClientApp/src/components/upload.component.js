@@ -1,0 +1,66 @@
+import { Link } from 'react-router-dom';
+
+import React,{Component} from 'react';
+
+export default class Upload extends Component {
+render() {
+    return (
+		<form>
+            <h1 className="testclass">Provide valid information</h1>
+
+			<div className="form-group">
+                    <label classname="font_size">Organization ;</label>
+                    <input type="text" className="font_size_2" placeholder="Organization" />
+            </div>
+
+            <div className="form-group">
+                    <label classname="font_size">Telephone number ;</label>
+                     <input type="text" className="font_size_2" placeholder="Telephone number" />
+            </div>
+
+			<div className="form-group">
+                    <label classname="font_size">Experience(YEARS) ;</label>
+                     <input type="text" className="font_size_2" placeholder="Experience" />
+            </div>
+
+            <div  className="form-group">
+
+			   
+                <label for="Province">Province ;</label>
+                <input name="Province" placeholder="Province" type="text" />
+                <label for="Distric">Distric ;</label>
+                <input name="Distric"  placeholder="Distric" type="text" /> 
+                
+            </div>
+
+			<div  className="form-group">
+
+               <label classname="font_size" for="Packages">Packages(LKR) ;</label>
+			   <label classname="font_size"> </label>
+               <input name="Package_1"  type="text"  placeholder="Package_1"/>
+               <input name="Package_2" type="text" placeholder="Package_2" /> 
+			   <input name="Package_3" type="text" placeholder="Package_3"  /> 
+			   
+			</div>
+
+			<div className="form-group">
+				<label>Addertisment ;</label>
+				<input type="file"   accept="image/*" onChange={this.onFileChange} />
+				<button onClick={this.onFileUpload}>
+				Upload!
+				</button>
+			</div>
+
+			<div class="flex-parent jc-center">
+                <Link to="/upload2">
+                        <button  class="magenta">Next</button>
+                 </Link>
+            </div>
+
+		</form>
+
+        );
+    }
+}
+
+
