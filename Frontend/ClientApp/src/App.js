@@ -26,6 +26,7 @@ import MerchentSignup from "./components/merchentregister.component";
 import MerchentAdd from "./components/merchentadd.component";
 import ClientRegister from "./components/Register/ClientReg.component";
 import VendorRegister from "./components/Register/VendorReg.component";
+
 import './custom.css'
 //import react from 'react';
 
@@ -62,10 +63,10 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to={"/Client-Registration"}>Client Registration</Link>
               </li>
-
               <li className="nav-item">
                 <Link className="nav-link" to={"/Vendor-Registration"}>Vendor Registration</Link>
               </li>
+
 
             </ul>
           </div>

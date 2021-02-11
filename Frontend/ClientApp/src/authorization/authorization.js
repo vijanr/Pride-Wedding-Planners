@@ -36,8 +36,8 @@ export const ClientRegistration = async (ClientNIC, FirstName, LastName, Address
 
     const body = JSON.stringify({ClientNIC, FirstName, LastName, Address, UserName,Email,MobileNo,Password,  ConfirmPassword});
 
-    if (Password!= ConfirmPassword){
-        alert("Password didn't Matched Try again..")
+    if (Password!== ConfirmPassword){
+        alert("Password didn't Match Try again...")
     }
 
   else {
@@ -59,9 +59,6 @@ export const ClientRegistration = async (ClientNIC, FirstName, LastName, Address
 
 
     }
-
-
-   
 
 };
 
@@ -95,8 +92,4 @@ export const VendorRegistration = async (CompanyName, CompanyCategory, Telephone
 
 
     }
-
-
-   
-
 };

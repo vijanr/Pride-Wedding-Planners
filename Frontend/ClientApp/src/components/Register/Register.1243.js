@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from "react";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+//import './CSS/form.css';
 
-import  {ClientRegistration}  from '../../authorization/authorization';
+import  {ClientRegistration}  from '../authorization/Auth';
 
-const ClientRegister = () => {
+const Register = () => {
   const [formData, setFromData] = useState(
     {
         ClientNIC: '',
@@ -23,7 +24,7 @@ const ClientRegister = () => {
 
  const onSubmit = async e => {
   e.preventDefault();
-  console.log("On Submit Function is working")
+  console.log("On Submit Function is Working")
    ClientRegistration (ClientNIC, FirstName, LastName, Address, UserName,Email,MobileNo,Password, ConfirmPassword);
     
 
@@ -141,13 +142,12 @@ const ClientRegister = () => {
           />
         </div>
         
-      <input type="submit" className="btn btn-primary" value="ClientRegistration" />
 
-        <input type="submit" className="btn btn-primary" value="Register As Client" />
+        <input type="submit" className="btn btn-primary" value="ClientRegistration" />
      </form>
       
     </Fragment>
   );
 };
 
-export default ClientRegister;
+export default Register;
