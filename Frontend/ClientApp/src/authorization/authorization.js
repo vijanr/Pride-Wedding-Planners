@@ -60,7 +60,36 @@ export const ClientRegistration = async (ClientNIC, FirstName, LastName, Address
 
     }
 
+};
 
-   
+export const VendorRegistration = async (CompanyName, CompanyCategory, TelephoneNo, UserName,Email, Password,  ConfirmPassword) => {
+    const config = {
+        headers: { "Content-Type": "application/json" }
+    };
 
+    const body = JSON.stringify({CompanyName, CompanyCategory, TelephoneNo, UserName,Email, Password,  ConfirmPassword});
+
+    if (Password!= ConfirmPassword){
+        alert("Password didn't Matched Try again..")
+    }
+
+  else {
+
+
+        try {
+            await axois.post("https://localhost:5001/api/VendorRegistrations", body, config);
+            alert("Your Have Successfully Registered ");
+            console.log("Vendor Registration is Successful")
+    
+        } catch (error) {
+            alert("Please Check Your Information again ");
+            console.log("Vendor Registration is Unsuccessful");
+            console.log(error);
+            
+        }
+
+
+
+
+    }
 };

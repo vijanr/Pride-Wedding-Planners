@@ -141,6 +141,7 @@ const ClientRegister = () => {
           />
         </div>
         
+      <input type="submit" className="btn btn-primary" value="ClientRegistration" />
 
         <input type="submit" className="btn btn-primary" value="Register As Client" />
      </form>
