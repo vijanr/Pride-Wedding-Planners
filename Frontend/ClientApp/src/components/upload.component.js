@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 
 import React,{Component} from 'react';
@@ -6,30 +7,35 @@ export default class Upload extends Component {
 render() {
     return (
 		<form>
-            <h1 className="testclass">Provide valid information</h1>
+            <h1 position="center">Publish Information Here...</h1>
+
+            <div className="form-group">
+                    <label classname="font_size">Company Category;</label>
+                    <input  type="text" className="font_size_2" placeholder="|Company Category|" />
+            </div>
 
 			<div className="form-group">
-                    <label classname="font_size">Organization ;</label>
-                    <input type="text" className="font_size_2" placeholder="Organization" />
+                    <label classname="font_size">Company name ;</label>
+                    <input  type="text" className="font_size_2" placeholder="|Company name|" />
             </div>
 
             <div className="form-group">
                     <label classname="font_size">Telephone number ;</label>
-                     <input type="text" className="font_size_2" placeholder="Telephone number" />
+                     <input type="text" className="font_size_2" placeholder="|Telephone number|" />
             </div>
 
 			<div className="form-group">
                     <label classname="font_size">Experience(YEARS) ;</label>
-                     <input type="text" className="font_size_2" placeholder="Experience" />
+                     <input type="text" className="font_size_2" placeholder="|Experience|" />
             </div>
 
             <div  className="form-group">
 
 			   
                 <label for="Province">Province ;</label>
-                <input name="Province" placeholder="Province" type="text" />
+                <input name="Province" placeholder="|Province|" type="text" />
                 <label for="Distric">Distric ;</label>
-                <input name="Distric"  placeholder="Distric" type="text" /> 
+                <input name="Distric"  placeholder="|Distric|" type="text" /> 
                 
             </div>
 
@@ -44,7 +50,7 @@ render() {
 			</div>
 
 			<div className="form-group">
-				<label>Addertisment ;</label>
+				<label>Addvertisment ;</label>
 				<input type="file"   accept="image/*" onChange={this.onFileChange} />
 				<button onClick={this.onFileUpload}>
 				Upload!
@@ -62,5 +68,4 @@ render() {
         );
     }
 }
-
 

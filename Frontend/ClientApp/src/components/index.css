@@ -81,20 +81,3 @@ body, html, .App, #root, .outer {
   color:rgb(10, 10, 128);
 }
 
-.object {
-  animation: MoveUpDown 1s linear infinite;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 100px;
-  }
-}
-
-
