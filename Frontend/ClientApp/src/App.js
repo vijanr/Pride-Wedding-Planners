@@ -28,6 +28,7 @@ import Upload from "./components/upload.component";
 import ClientRegister from "./components/Register/ClientReg.component";
 import VendorRegister from "./components/Register/VendorReg.component";
 import Payment from "./components/payment.component";
+import Forget from "./components/forget.component";
 import './custom.css'
 //import react from 'react';
 
@@ -87,7 +88,8 @@ function App() {
             <Route path="/contact-info" component={Contactinfo}/>
             <Route path="/upload" component={Upload}/>
             <Route path="/pay" component={Payment}/>
-
+            <Route path="/forget-pw" component={Forget}/>
+            
             <Route path="/Client-Registration" component={ ClientRegister}/>
             <Route path="/Vendor-Registration" component={ VendorRegister}/>
           </Switch>
