@@ -1,11 +1,8 @@
-.App {
-    font-family: sans-serif;
-    text-align: center;
-  }
+
   
   /* SOCIAL STUFF */
   .social-container {
-   
+    text-align: center;
     font-style: italic;
   }
   a.social {
@@ -36,3 +33,9 @@
     color: black;
   }
   
+  .heading {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+  }

@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import Cards from'react-credit-cards'
 import { Link } from 'react-router-dom';
-//import './index.css';
+import './index.css';
 import './payment.css';
 import'react-credit-cards/es/styles-compiled.css'
 //import { render } from 'react-dom';

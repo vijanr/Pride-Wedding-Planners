@@ -37,7 +37,7 @@ export default class Login extends Component {
               sign up
                 </Link>
                 <span className="p-2">|</span>
-                <Link to="/sign-up">
+                <Link to="/forget-pw">
                Forgot Password
                </Link>
               </div>         
