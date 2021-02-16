@@ -14,12 +14,12 @@ export default class Contactinfo extends Component {
     render() {
         return (
             <form>
-                <div className="App">
+                <div className="heading">
                  <h2>Contact us on</h2>
                 </div>
                
-                <div className="social-container" >
-                <h3>@prideweddingplanners</h3>
+                <div className="social-container">
+                <h4>@prideweddingplanners</h4>
                 <a
                    href="https://www.youtube.com/c/jamesqquick"
                     className="youtube social"
