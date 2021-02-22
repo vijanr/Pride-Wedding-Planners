@@ -1,30 +1,41 @@
 import React, { useState} from 'react';
 import Cards from'react-credit-cards'
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import './index.css';
 import './payment.css';
 import'react-credit-cards/es/styles-compiled.css'
-//import { render } from 'react-dom';
+import { CardDetails } from '../authorization/authorization';
+
 
 
 function Pay() {
-  const [number, setNumber] = useState('')
-  const [name, setName] = useState('')
-  const [expiary, setExpiary] = useState('')
-  const [cvc, setCvc] = useState('')
+  const [CardNo, setNumber] = useState('')
+  const [CardholderName, setName] = useState('')
+  const [ExpDate, setExpiary] = useState('')
+  const [CVV, setCvc] = useState('')
   const [focus, setFocus] = useState('')
-  
+  console.log("Until On Submit is Working")
+ 
+
+  const onSubmit = async e => {
+    e.preventDefault();
+    console.log("On Submit Function is working")
+     CardDetails (CardNo,CardholderName,ExpDate,CVV);
+     
+  };
   return(
    
 <div >
   <Cards
-  number={number}
-  name={name}
-  expiry={expiary}
-  cvc={cvc}
+  number={CardNo}
+  name={CardholderName}
+  expiry={ExpDate}
+  cvc={CVV}
+ 
+
   focused={focus}
   />
-  <form>
+  <form  onSubmit={e => onSubmit(e)}>
       <div className="heading">
   <h3 >Payments</h3>
   </div>
@@ -34,7 +45,8 @@ function Pay() {
     type='tel' 
     name='number' 
     placeholder='Card Number'
-    value={number}
+    value={CardNo}
+    
     onChange={e => setNumber(e.target.value)}
     onFocus={e => setFocus(e.target.name)}
     />
@@ -45,7 +57,8 @@ function Pay() {
     type='text' 
     name='name' 
     placeholder='Name'
-    value={name}
+    value={CardholderName}
+    
     onChange={e => setName(e.target.value)}
     onFocus={e => setFocus(e.target.name)}
     />
@@ -56,7 +69,8 @@ function Pay() {
     type='tel' 
     name='exiary' 
     placeholder='MM/YY'
-    value={expiary}
+    value={ExpDate}
+    
     onChange={e => setExpiary(e.target.value)}
     onFocus={e => setFocus(e.target.name)}
     />
@@ -67,15 +81,16 @@ function Pay() {
     type='tel' 
     name='cvc' 
     placeholder='CVV'
-    value={cvc}
+    value={CVV}
+    
     onChange={e => setCvc(e.target.value)}
     onFocus={e => setFocus(e.target.name)}
     />
     </div>
     <div>
-    <Link to="/upload">
+   
     <button type="Submit" className="btn btn-dark btn-lg btn-block">Pay Now</button>
- </Link>
+
      </div>  
   </form>
 </div>
