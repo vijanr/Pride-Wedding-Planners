@@ -10,14 +10,15 @@ namespace PrideWeddingPlanners.Models
     {
         [Key]
         public int ID { get; set; }
-
+        
         [DataType(DataType.CreditCard)]
         public string CardNo { get; set; }
         
         public string CardholderName { get; set; }
         
         public string ExpDate { get; set; }
-      
+
+        
         public string CVV { get; set; }
     }
 }

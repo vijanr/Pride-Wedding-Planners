@@ -42,10 +42,13 @@ function Pay() {
   <div className="form">
   <label>Card Number</label>
     <input className="input-text" 
-    type='tel' 
+     type='tel' 
     name='number' 
     placeholder='Card Number'
+    minLength="16"
+    maxLength="16" 
     value={CardNo}
+    required
     
     onChange={e => setNumber(e.target.value)}
     onFocus={e => setFocus(e.target.name)}
@@ -58,7 +61,9 @@ function Pay() {
     name='name' 
     placeholder='Name'
     value={CardholderName}
-    
+    required
+    minLength='1'
+    maxLength='32' 
     onChange={e => setName(e.target.value)}
     onFocus={e => setFocus(e.target.name)}
     />
@@ -70,7 +75,10 @@ function Pay() {
     name='exiary' 
     placeholder='MM/YY'
     value={ExpDate}
-    
+    required
+    minLength='4'
+    maxLength='5' 
+
     onChange={e => setExpiary(e.target.value)}
     onFocus={e => setFocus(e.target.name)}
     />
@@ -82,7 +90,10 @@ function Pay() {
     name='cvc' 
     placeholder='CVV'
     value={CVV}
-    
+    required
+    minLength='3'
+    maxLength='3' 
+
     onChange={e => setCvc(e.target.value)}
     onFocus={e => setFocus(e.target.name)}
     />

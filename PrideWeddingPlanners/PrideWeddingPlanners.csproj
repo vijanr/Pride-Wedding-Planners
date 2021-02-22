@@ -11,6 +11,10 @@
     <Compile Remove="Migrations\20210221210949_Update Payments.Designer.cs" />
     <Compile Remove="Migrations\20210221211226_Update Payments.cs" />
     <Compile Remove="Migrations\20210221211226_Update Payments.Designer.cs" />
+    <Compile Remove="Migrations\20210222053329_Updated Payments.cs" />
+    <Compile Remove="Migrations\20210222053329_Updated Payments.Designer.cs" />
+    <Compile Remove="Migrations\20210222054920_test.cs" />
+    <Compile Remove="Migrations\20210222054920_test.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
