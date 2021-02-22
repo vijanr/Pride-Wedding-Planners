@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20210221204553_Update Payments.cs" />
+    <Compile Remove="Migrations\20210221204553_Update Payments.Designer.cs" />
+    <Compile Remove="Migrations\20210221210949_Update Payments.cs" />
+    <Compile Remove="Migrations\20210221210949_Update Payments.Designer.cs" />
+    <Compile Remove="Migrations\20210221211226_Update Payments.cs" />
+    <Compile Remove="Migrations\20210221211226_Update Payments.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.1.11" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.8" />

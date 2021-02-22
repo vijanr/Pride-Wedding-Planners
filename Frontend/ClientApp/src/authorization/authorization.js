@@ -69,7 +69,7 @@ export const VendorRegistration = async (CompanyName, CompanyCategory, Telephone
 
     const body = JSON.stringify({CompanyName, CompanyCategory, TelephoneNo, UserName,Email, Password,  ConfirmPassword});
 
-    if (Password!= ConfirmPassword){
+    if (Password!== ConfirmPassword){
         alert("Password didn't Matched Try again..")
     }
 
@@ -94,3 +94,32 @@ export const VendorRegistration = async (CompanyName, CompanyCategory, Telephone
 
     }
 };
+
+
+export const CardDetails = async (CardNo,CardholderName,ExpDate,CVV) => {
+    const config = {
+        headers: { "Content-Type": "application/json" }
+    };
+
+    const body = JSON.stringify({CardNo,CardholderName,ExpDate,CVV });
+    if (CardNo === 'null' || CardholderName === 'null' || ExpDate === 'null' || CVV === 'null'  ){
+        alert("Please fill Your Credit or Debit Card Information")
+    }
+    
+    else {
+        try {
+            await axois.post("https://localhost:5001/api/Payments", body, config);
+            alert("Card is being Verified ");
+            
+            console.log("Card Data has Successfully Recorded")
+    
+        } catch (error) {
+            alert("Please Check Your Information again ");
+            console.log("Card Details are Incorrect");
+            console.log(error);
+            
+        }
+
+
+    }
+}
