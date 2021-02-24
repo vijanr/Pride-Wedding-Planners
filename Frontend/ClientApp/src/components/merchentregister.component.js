@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export default class SignUp extends Component {
     render() {
         return (
+
             <form>
                 <h3 classname="font_size">Registration</h3>
 
@@ -48,6 +49,7 @@ export default class SignUp extends Component {
                  <p className="forgot-password text-right">Already registered <a href="#">log in?</a></p>
                 </Link>
             </form>
+         
         );
     }
 }

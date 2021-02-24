@@ -26,15 +26,15 @@ function Pay() {
   return(
    
 <div >
+
   <Cards
   number={CardNo}
   name={CardholderName}
   expiry={ExpDate}
   cvc={CVV}
- 
-
   focused={focus}
   />
+        
   <form  onSubmit={e => onSubmit(e)}>
       <div className="heading">
   <h3 >Payments</h3>
@@ -101,9 +101,10 @@ function Pay() {
     <div>
    
     <button type="Submit" className="btn btn-dark btn-lg btn-block">Pay Now</button>
-
+   
      </div>  
   </form>
+
 </div>
   );
 }

@@ -40,8 +40,8 @@ const Register = () => {
       <form className="form" onSubmit={e => onSubmit(e)}>
 
       <div className="form-group">
-          <small className="form-text">Client NIC Number</small>
-          <input
+      <label>Client NIC Number</label>
+          <input className="form-control" 
             type="text"
             placeholder="ClientNIC"
             name="ClientNIC"
@@ -51,8 +51,8 @@ const Register = () => {
         </div>
 
         <div className="form-group">
-          <small className="form-text">First Name</small>
-          <input
+        <label>First Name</label>
+          <input className="form-control" 
             type="text"
             placeholder="First Name"
             name="FirstName"
@@ -61,8 +61,8 @@ const Register = () => {
           />
         </div>
         <div className="form-group">
-          <small className="form-text"> Last Name</small>
-          <input
+        <label>Last Name</label>
+          <input className="form-control" 
             type="text"
             placeholder="Last Name"
             name="LastName"
@@ -72,8 +72,8 @@ const Register = () => {
           <small className="form-text"></small>
         </div>
         <div className="form-group">
-          <small className="form-text"> Address</small>
-          <input
+        <label>Address</label>
+          <input className="form-control" 
             type="text"
             placeholder="Address"
             name="Address"
@@ -84,8 +84,8 @@ const Register = () => {
         </div>
 
         <div className="form-group">
-          <small className="form-text"> UserName</small>
-          <input
+        <label>UserName</label>
+          <input className="form-control" 
             type="text"
             placeholder="UserName"
             name="UserName"
@@ -96,9 +96,9 @@ const Register = () => {
         </div>
 
         <div className="form-group">
-          <small className="form-text"> Email</small>
-          <input
-            type="text"
+        <label>Email</label>
+          <input className="form-control" 
+            type="email"
             placeholder="Email"
             name="Email"
             value={Email}
@@ -108,8 +108,8 @@ const Register = () => {
         </div>
 
         <div className="form-group">
-          <small className="form-text">Mobile Number</small>
-          <input
+        <label>Mobile Number</label>
+          <input className="form-control" 
             type="text"
             placeholder="MobileNo"
             name="MobileNo"
@@ -122,8 +122,8 @@ const Register = () => {
 
 
         <div className="form-group">
-          <small className="form-text">Password</small>
-          <input
+        <label>Password</label>
+          <input className="form-control" 
             type="password"
             placeholder="Password"
             name="Password"
@@ -132,8 +132,8 @@ const Register = () => {
           />
         </div>
         <div className="form-group">
-          <small className="form-text">Confirm Password</small>
-          <input
+        <label>Confirm Password</label>
+          <input className="form-control" 
             type="password"
             placeholder="Comfirm Your Password"
             name="ConfirmPassword"

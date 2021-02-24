@@ -11,7 +11,6 @@ export default class Employee extends Component {
         return (
             
         <div>
-        
             <div>
               <div class="position-absolute top-left"> 
                  <p class="new2">PRIDE WEDDING SERVICE PROVIDER</p> 

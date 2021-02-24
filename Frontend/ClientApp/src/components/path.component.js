@@ -9,6 +9,7 @@ import './welcome.css';
 export default class Employee extends Component {
     render() {
         return (
+
             <div>
                  <h1 className="testClass"> PUBLISHING ADVERTISMENTS & DISCOVERING PACKAGES </h1>
                   <h1 className="testClass8">  </h1>
@@ -31,8 +32,6 @@ export default class Employee extends Component {
                         <button  class="magenta">Merchent</button>
                       </Link>
                  </div>
-
-
            </div> 
      
         );

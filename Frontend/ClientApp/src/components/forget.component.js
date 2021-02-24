@@ -6,6 +6,7 @@ export default class Forget extends Component {
 
     render() {
         return (
+         
             <form>
                 <h3>Forgot Password</h3>
 
@@ -16,6 +17,7 @@ export default class Forget extends Component {
                   <button type="submit" className="btn btn-dark btn-lg btn-block">Submit</button>
                 
             </form>
+          
         );
     }
 }

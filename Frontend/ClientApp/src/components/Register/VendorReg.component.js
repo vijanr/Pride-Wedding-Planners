@@ -32,7 +32,7 @@ const VendorRegister = () => {
 
   return (
     <Fragment>
-     
+
       <form  onSubmit={e => onSubmit(e)}>
         
         <h3  className="testClass" >VENDOR REGISTRATION </h3>
@@ -128,7 +128,7 @@ const VendorRegister = () => {
            <p className="forgot-password text-right">Already registered <a href="#">log in?</a></p>
          </Link>        
      </form>
-      
+  
     </Fragment>
   );
 };

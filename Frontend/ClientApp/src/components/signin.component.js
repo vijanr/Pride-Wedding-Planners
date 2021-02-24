@@ -5,6 +5,7 @@ import "./index.css";
 export default class Login extends Component {
     render(){
         return (
+ 
             <form>
             <h3>Log in</h3>
 
@@ -42,6 +43,7 @@ export default class Login extends Component {
                </Link>
               </div>         
           </form>
+         
         );
       }
       }

@@ -13,6 +13,7 @@ import {
 export default class Contactinfo extends Component {
     render() {
         return (
+          
             <form>
                 <div className="heading">
                  <h2>Contact us on</h2>
@@ -43,6 +44,7 @@ export default class Contactinfo extends Component {
       </a>
     </div>
             </form>
+         
         );
     }
 }

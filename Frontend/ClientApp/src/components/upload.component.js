@@ -6,6 +6,8 @@ import React,{Component} from 'react';
 export default class Upload extends Component {
 render() {
     return (
+        <div className="outer">
+        <div className="inner">
 		<form>
             <h1 position="center">Publish Information Here...</h1>
 
@@ -64,7 +66,8 @@ render() {
             </div>
 
 		</form>
-
+</div>
+</div>
         );
     }
 }

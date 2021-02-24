@@ -5,6 +5,7 @@ import "./index.css";
 export default class Login extends Component {
     render() {
         return (
+       
             <form>
 
                 <h3>Verify Log in</h3>
@@ -29,6 +30,7 @@ export default class Login extends Component {
                   <button type="submit" className="btn btn-dark btn-lg btn-block">Submit</button>
                 </Link>
             </form>
+          
         );
     }
 }

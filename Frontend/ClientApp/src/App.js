@@ -30,6 +30,7 @@ import VendorRegister from "./components/Register/VendorReg.component";
 import Payment from "./components/payment.component";
 import Forget from "./components/forget.component";
 import './custom.css'
+import Navbar from "./components/NavMenu";
 //import react from 'react';
 
 /*export default class App extends Component {
@@ -48,31 +49,9 @@ import './custom.css'
 
 function App() {
   return (<Router>
-    <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-        <div className="container">
-          <Link classname="nav-link" to={"/contact-info"}>CALL US +9477423909 | CONTACT US</Link>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav ml-auto">
-
-            <li className="nav-item">
-                <Link className="nav-link" to={"/selection"}>Home</Link>
-              </li>
-            
-              <li className="nav-item">
-                <Link className="nav-link" to={"/sign-in"}>Sign In</Link>
-              </li>
-
-             
-
-
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div className="outer">
-        <div className="inner">
+             <div className="outer">
+          <div className="inner">
+        <Navbar />
           <Switch>
             <Route exact path='/' component={Selection} />
             <Route path="/selection" component={Selection} />
@@ -93,9 +72,9 @@ function App() {
             <Route path="/Client-Registration" component={ ClientRegister}/>
             <Route path="/Vendor-Registration" component={ VendorRegister}/>
           </Switch>
-        </div>
-      </div>
-    </div></Router>
+         
+          </div> </div> 
+    </Router>
   );
 }
 

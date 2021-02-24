@@ -1,49 +1,53 @@
-import React, { Component } from 'react';
-import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-import './NavMenu.css';
 
-export class NavMenu extends Component {
-  static displayName = NavMenu.name;
+function Navbar(){
+  return(
 
-  constructor (props) {
-    super(props);
+      <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div className="container-fluid">
+          
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+                <Link className="nav-link text-white ml-5" to={"/selection"}>Home&nbsp;<i class="fas fa-home"></i></Link>
+              </li>
+            <li className="nav-item">
+                <Link className="nav-link text-white ml-5" to={"/contact-info"}>Contact us&nbsp;<i class="fas fa-phone"></i></Link>
+              </li>
+            
+              <li className="nav-item">
+                <Link className="nav-link text-white ml-5" to={"/sign-in"}>Sign In</Link>
+              </li>
 
-    this.toggleNavbar = this.toggleNavbar.bind(this);
-    this.state = {
-      collapsed: true
-    };
-  }
+              <li className="nav-item dropdown">
+              <button className="btn btn-secondary dropdown-toggle text-white ml-5" 
+              type="button" 
+              id="dropdownMenuButton1" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false">
+              SignUp
+              </button>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li>  <Link className="dropdown-item"  to={"/sign-in"}>Sign In</Link> </li>
+                  <li>  <Link className="dropdown-item"  to={"/sign-in"}>Sign In</Link> </li>
 
-  toggleNavbar () {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  }
-
-  render () {
-    return (
-      <header>
-        <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" light>
-          <Container>
-            <NavbarBrand tag={Link} to="/">PrideWeddingPlanners</NavbarBrand>
-            <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-            <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
-              <ul className="navbar-nav flex-grow">
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
-                </NavItem>
-              </ul>
-            </Collapse>
-          </Container>
-        </Navbar>
-      </header>
-    );
-  }
+                </ul>
+              </li>
+              <form className="d-flex ml-5">
+              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button className="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+  )
 }
+export default Navbar;
+
+
+

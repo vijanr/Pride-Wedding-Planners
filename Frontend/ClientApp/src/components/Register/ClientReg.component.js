@@ -32,6 +32,7 @@ const ClientRegister = () => {
 
   return (
     <Fragment>
+
       <form  onSubmit={e => onSubmit(e)}>
         
       <h3  className="testClass" >CLIENT REGISTRATION </h3>
@@ -155,7 +156,7 @@ const ClientRegister = () => {
 
 
      </form>
-      
+     
     </Fragment>
   );
 };

@@ -40,6 +40,7 @@ ReactDOM.render(element3,document.getElementById('root3'));*/
 export default class Employee extends Component {
     render() {
         return (
+
             <div>
                  <h1 className="testClass"> WELCOME TO PRIDE WEDDING SERVICE  </h1>
                   <h1 className="testClass2"> </h1>
@@ -51,6 +52,7 @@ export default class Employee extends Component {
                     </Link>
                  </div> 
            </div>  
+
         );
     }
 }
