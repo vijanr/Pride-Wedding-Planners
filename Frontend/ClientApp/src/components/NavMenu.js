@@ -17,21 +17,10 @@ function Navbar(){
                 <Link className="nav-link text-white ml-5" to={"/contact-info"}>Contact us&nbsp;<i class="fas fa-phone"></i></Link>
               </li>
             
-              
-              <li className="nav-item dropdown">
-              <ul className="nav-link dropdown-toggle text-white ml-5" 
-              type="button" 
-              id="navbarDropdownMenuLink" 
-              data-bs-toggle="dropdown"
-              >
-              Sign In
-              </ul>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li>  <Link className="dropdown-item"  to={"/client-login"}>Sign Ip as Client</Link> </li>
-                  <li>  <Link className="dropdown-item"  to={"/sign-in"}>Sign Ip as Vendor</Link> </li>
-
-                </ul>
+              <li className="nav-item">
+                <Link className="nav-link text-white ml-5" to={"/sign-in"}>Sign In</Link>
               </li>
+             
 
               <li className="nav-item dropdown">
               <ul className="nav-link dropdown-toggle text-white ml-5" 

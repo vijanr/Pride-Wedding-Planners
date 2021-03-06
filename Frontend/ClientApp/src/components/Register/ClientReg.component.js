@@ -149,7 +149,7 @@ const ClientRegister = () => {
       <Link to="/verify-login">
            < button type="submit" className="btn btn-dark btn-lg btn-block">Next</button>
       </Link>
-      <Link to="/client-login">
+      <Link to="/sign-in">
          <p className="forgot-password text-right">Already registered <a href="#">log in?</a></p>
       </Link>
 

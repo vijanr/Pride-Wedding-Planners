@@ -21,7 +21,6 @@ import Selection from "./components/selection.component";
 import Path from "./components/path.component";
 import Client_Selection from "./components/client-selection.component";
 import Signin from "./components/signin.component";
-import Client_Login from "./components/client-login.component";
 import Contactinfo from "./components/contactinfo.component";
 import MerchentSignup from "./components/merchentregister.component";
 import MerchentAdd from "./components/merchentadd.component";
@@ -65,7 +64,6 @@ function App() {
             <Route path="/verify-login-2" component={Verify_Login_2} />
             <Route path="/client-selection" component={Client_Selection} />
             <Route path="/sign-in" component={Signin}/>
-            <Route path="/client-login" component={Client_Login}/>
             <Route path="/contact-info" component={Contactinfo}/>
             <Route path="/upload" component={Upload}/>
             <Route path="/pay" component={Payment}/>
