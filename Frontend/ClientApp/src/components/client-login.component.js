@@ -7,7 +7,7 @@ export default class Login extends Component {
         return (
  
             <form>
-            <h3> Vendor Log in</h3>
+            <h3> Client Log in</h3>
 
             <div className="form-group">
                 <label>Email</label>
@@ -34,7 +34,7 @@ export default class Login extends Component {
               </div>
               <FacebookLoginButton classname="mt-1 mb-1"/>
               <div className="forgot-password text-right">
-              <Link to="/Vendor-Registration">
+              <Link to="/Client-Registration">
               sign up
                 </Link>
                 <span className="p-2">|</span>
