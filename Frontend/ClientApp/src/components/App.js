@@ -23,6 +23,7 @@ import Contactinfo from "./components/contactinfo.component";
 import MerchentSignup from "./components/merchentregister.component";
 import MerchentAdd from "./components/merchentadd.component";
 import Upload from "./components/upload.component";
+import Uploadnew from "./upload";
 import ClientRegister from "./components/Register/ClientReg.component";
 import VendorRegister from "./components/Register/VendorReg.component";
 
@@ -63,6 +64,9 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to={"/Client-Registration"}>Client Registration</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/uploadNew"}>Upload</Link>
+              </li>
 
             </ul>
           </div>
@@ -80,6 +84,7 @@ function App() {
             <Route path="/sign-in" component={Signin}/>
             <Route path="/contact-info" component={Contactinfo}/>
             <Route path="/upload" component={Upload}/>
+            <Route path="/uploadNew" component={Uploadnew}/>
 
             <Route path="/Client-Registration" component={ ClientRegister}/>
             <Route path="/Vendor-Registration" component={ VendorRegister}/>

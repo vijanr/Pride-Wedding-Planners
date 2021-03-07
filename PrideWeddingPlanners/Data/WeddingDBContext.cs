@@ -21,6 +21,7 @@ namespace PrideWeddingPlanners.Data
         public DbSet<VendorRegistration> VendorTable { get; set; }
         public DbSet<PrideWeddingPlanners.Models.ClientLogin> ClientLogin { get; set; }
         public DbSet<PrideWeddingPlanners.Models.VendorLogin> VendorLogin { get; set; }
-        
+        public DbSet<Upload> Uploads { get; set; }
+
     }
 }

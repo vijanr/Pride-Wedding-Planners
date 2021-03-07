@@ -2,19 +2,21 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PrideWeddingPlanners.Data;
 
 namespace PrideWeddingPlanners.Migrations
 {
     [DbContext(typeof(WeddingDBContext))]
-    partial class WeddingDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210306154242_CreatingUploading")]
+    partial class CreatingUploading
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.12")
+                .HasAnnotation("ProductVersion", "3.1.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -155,33 +157,21 @@ namespace PrideWeddingPlanners.Migrations
 
             modelBuilder.Entity("PrideWeddingPlanners.Models.Upload", b =>
                 {
-                    b.Property<int>("CompanyId")
+                    b.Property<int>("EmployeeId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("CompanyName")
+                    b.Property<string>("EmployeeName")
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("ImageName")
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Located_distric")
+                    b.Property<string>("Occupation")
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Located_province")
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Max_package")
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Mid_package")
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Min_package")
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("CompanyId");
+                    b.HasKey("EmployeeId");
 
                     b.ToTable("Uploads");
                 });
