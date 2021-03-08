@@ -26,7 +26,7 @@ import MerchentSignup from "./components/merchentregister.component";
 import MerchentAdd from "./components/merchentadd.component";
 import Upload from "./components/upload.component";
 import Uploading from "./upload";
-
+import Newcarousel from "./components/newcar";
 import ClientRegister from "./components/Register/ClientReg.component";
 import VendorRegister from "./components/Register/VendorReg.component";
 import Payment from "./components/payment.component";
@@ -68,6 +68,7 @@ function App() {
             <Route path="/sign-in" component={Signin}/>
             <Route path="/contact-info" component={Contactinfo}/>
             <Route path="/upload" component={Upload}/>
+            <Route path="/newcar" component={Newcarousel}/>
             <Route path="/uploading" component={Uploading}/>
             <Route path="/pay" component={Payment}/>
             <Route path="/forget-pw" component={Forget}/>

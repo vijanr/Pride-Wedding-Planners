@@ -24,6 +24,11 @@ function Navbar(){
                 <Link className="nav-link text-white ml-5" to={"/uploading"}>Uploading</Link>
               </li>
 
+              <li className="nav-item">
+                <Link className="nav-link text-white ml-5" to={"/newcar"}>ABOUT US</Link>
+              </li>
+            
+
               <li className="nav-item dropdown">
               <button className="btn btn-secondary dropdown-toggle text-white ml-5" 
               type="button" 
