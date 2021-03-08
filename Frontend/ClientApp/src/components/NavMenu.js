@@ -20,8 +20,17 @@ function Navbar(){
               <li className="nav-item">
                 <Link className="nav-link text-white ml-5" to={"/sign-in"}>Sign In</Link>
               </li>
-             
+//////
+              <li className="nav-item">
+                <Link className="nav-link text-white ml-5" to={"/uploading"}>Uploading</Link>
+              </li>
 
+              <li className="nav-item">
+                <Link className="nav-link text-white ml-5" to={"/newcar"}>ABOUT US</Link>
+              </li>
+            
+
+//////
               <li className="nav-item dropdown">
               <ul className="nav-link dropdown-toggle text-white ml-5" 
               type="button" 
