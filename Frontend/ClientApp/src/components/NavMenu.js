@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-
+import './NavMenu.css';
 function Navbar(){
   return(
 
@@ -20,6 +20,7 @@ function Navbar(){
               <li className="nav-item">
                 <Link className="nav-link text-white ml-5" to={"/sign-in"}>Sign In</Link>
               </li>
+//////
               <li className="nav-item">
                 <Link className="nav-link text-white ml-5" to={"/uploading"}>Uploading</Link>
               </li>
@@ -29,17 +30,18 @@ function Navbar(){
               </li>
             
 
+//////
               <li className="nav-item dropdown">
-              <button className="btn btn-secondary dropdown-toggle text-white ml-5" 
+              <ul className="nav-link dropdown-toggle text-white ml-5" 
               type="button" 
-              id="dropdownMenuButton1" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false">
+              id="navbarDropdownMenuLink" 
+              data-bs-toggle="dropdown"
+              >
               SignUp
-              </button>
+              </ul>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li>  <Link className="dropdown-item"  to={"/sign-in"}>Sign In</Link> </li>
-                  <li>  <Link className="dropdown-item"  to={"/sign-in"}>Sign In</Link> </li>
+                  <li>  <Link className="dropdown-item"  to={"/Client-Registration"}>SignUp as Client</Link> </li>
+                  <li>  <Link className="dropdown-item"  to={"/Vendor-Registration"}>SignUp as Vendor</Link> </li>
 
                 </ul>
               </li>

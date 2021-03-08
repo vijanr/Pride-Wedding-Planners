@@ -13,7 +13,7 @@ export default class Employee extends Component {
             <div>
                  <h1 className="testClass"> PUBLISHING ADVERTISMENTS & DISCOVERING PACKAGES </h1>
                   <h1 className="testClass8">  </h1>
-                   <h2 className="testClass5"> | LOGGING AS| </h2>
+                   <h2 className="testClass5"> | REGISTER AS| </h2>
                  
                  
 
