@@ -9,7 +9,7 @@ import './selection.css';
 export default class Employee extends Component {
     render() {
         return (
-            
+        <form>  
         <div>
         
             <div>
@@ -17,7 +17,7 @@ export default class Employee extends Component {
                  <p class="new2"> **** WELL DONE! YOU CAN PUBLISH YOUR ADVERTISMENTS **** </p> 
                   <p class="new2"> </p> 
               </div> 
-  
+              <h1 className="testClassNull">  </h1>
               <div class="position-absolute mid-left"> 
               <Link to="/pay">  
                  <button type="button" class="new3">HOTEL & CATERING</button> 
@@ -56,7 +56,7 @@ export default class Employee extends Component {
               </div> 
             </div> 
         </div> 
-     
+        </form>  
         );
     }
 }
