@@ -37,11 +37,10 @@ const VendorRegister = () => {
         
         <h3  className="testClass" >VENDOR REGISTRATION </h3>
          <h3 className="form_text">Create a new account</h3>
-           
- 
+        
         <div className="form-group">
-          <small className="form_text">Company Name</small>
-          <input className="font_size"
+        <label>Company Name</label>
+          <input className="form-control"
             type="text"
             placeholder="CompanyName"
             name="CompanyName"
@@ -51,8 +50,8 @@ const VendorRegister = () => {
         </div>
 
         <div className="form-group">
-          <small className="form_text">Company Category</small>
-          <input className="font_size"
+        <label>Company Category</label>
+          <input className="form-control"
             type="text"
             placeholder="Company Category"
             name="CompanyCategory"
@@ -61,8 +60,8 @@ const VendorRegister = () => {
           />
         </div>
         <div className="form-group">
-          <small className="form_text"> Telephone Number</small>
-          <input className="font_size"
+        <label>Telephone No</label>
+          <input className="form-control"
             type="text"
             placeholder="Telephone Number"
             name="TelephoneNo"
@@ -73,8 +72,8 @@ const VendorRegister = () => {
         </div>
         
           <div className="form-group">
-          <small className="form_text"> UserName</small>
-          <input className="font_size"
+          <label>Username</label>
+          <input className="form-control"
             type="text"
             placeholder="UserName"
             name="UserName"
@@ -85,9 +84,9 @@ const VendorRegister = () => {
         </div>
 
         <div className="form-group">
-          <small className="form_text"> Email</small>
-          <input className="font_size"
-            type="text"
+        <label>Email</label>
+          <input className="form-control"
+            type="email"
             placeholder="Email"
             name="Email"
             value={Email}
@@ -98,8 +97,8 @@ const VendorRegister = () => {
 
        
           <div className="form-group">
-          <small className="form_text">Password</small>
-          <input className="font_size"
+          <label>Password</label>
+          <input className="form-control"
             type="password"
             placeholder="Password"
             name="Password"
@@ -108,8 +107,8 @@ const VendorRegister = () => {
           />
         </div>
         <div className="form-group">
-          <small className="form_text">Confirm Password</small>
-          <input className="font_size"
+          <label>Confirm Password</label>
+          <input className="form-control"
             type="password"
             placeholder="Confirm Your Password"
             name="ConfirmPassword"
