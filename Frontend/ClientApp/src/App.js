@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //import { Counter } from './components/Counter';
 
 import './App.css';
-import "./index.css";
+import "./index.css"; 
 import "./components/welcome.css";
 import "./components/selection.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -33,6 +33,8 @@ import Payment from "./components/payment.component";
 import Forget from "./components/forget.component";
 import './custom.css'
 import Navbar from "./components/NavMenu";
+import Footer from "./components/Footer"
+import News from "./components/Testimonials";
 //import react from 'react';
 
 /*export default class App extends Component {
@@ -72,13 +74,15 @@ function App() {
             <Route path="/uploading" component={Uploading}/>
             <Route path="/pay" component={Payment}/>
             <Route path="/forget-pw" component={Forget}/>
+            <Route path="/news" component={News}/>
             
             <Route path="/Client-Registration" component={ ClientRegister}/>
             <Route path="/Vendor-Registration" component={ VendorRegister}/>
           </Switch>
-         
           </div> </div> 
+          <Footer/>
     </Router>
+    
   );
 }
 
