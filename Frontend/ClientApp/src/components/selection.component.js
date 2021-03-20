@@ -6,16 +6,21 @@ import './selection.css';
 
 
 
+
 export default class Employee extends Component {
     render() {
         return (
             
-        <div>
-            <div>
+<form>
+  <div>
+              
               <div class="position-absolute top-left"> 
-                 <p class="new2">PRIDE WEDDING SERVICE PROVIDER</p> 
+                 <p class="new2"> PRIDE WEDDING SERVICE PROVIDERS </p> 
+                  <p class="new2"> </p> 
               </div> 
-  
+                  <h1 className="testClassNull">  </h1>
+              
+              </div>            
               <div class="position-absolute mid-left"> 
                 <Link to="/register">
                  <button type="button" class="new3">HOTEL & CATERING</button> 
@@ -47,8 +52,7 @@ export default class Employee extends Component {
                  <button type="button" class="new3">ENTERTAINMENT</button> 
                 </Link>
               </div> 
-            </div> 
-        </div> 
+              </form> 
      
         );
     }

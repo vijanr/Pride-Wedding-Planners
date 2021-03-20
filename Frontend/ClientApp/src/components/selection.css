@@ -155,3 +155,21 @@
       bottom: 0; 
       right: 0; 
     } 
+  
+.testClassNull{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 490px;
+  border: 3px solid white;
+  border-radius: 5px;
+  border-style: groove;
+  border-color: white;
+  border-width: 0px;
+ 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  
+}

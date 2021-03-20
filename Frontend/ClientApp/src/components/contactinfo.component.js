@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 //import { Link } from 'react-router-dom';
 
-//import "./index.css";
+import "./index.css";
 import "./contactinfo.css";
+import logo from './images/couple3.PNG';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -16,9 +17,9 @@ export default class Contactinfo extends Component {
           
             <form>
                 <div className="heading">
-                 <h2>Contact us on</h2>
+                 <h2 className="testClass">Contact us on</h2>
                 </div>
-               
+              <img src={logo} alt="Logo" />;
                 <div className="social-container">
                 <h4>@prideweddingplanners</h4>
                 <a
